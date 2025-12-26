@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import { useState } from 'react';
 
 type Flake = {
   left: string;
@@ -8,12 +8,16 @@ type Flake = {
   animationDelay: string;
 };
 
-export default function Snow() {
-  const flakes: Flake[] = Array.from({ length: 80 }, () => ({
+function generateFlakes(count: number): Flake[] {
+  return Array.from({ length: count }, () => ({
     left: `${Math.random() * 100}%`,
     animationDuration: `${5 + Math.random() * 10}s`,
     animationDelay: `${Math.random() * 5}s`,
   }));
+}
+
+export default function Snow() {
+  const [flakes] = useState<Flake[]>(() => generateFlakes(80));
 
   return (
     <div className="snow">
