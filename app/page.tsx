@@ -12,15 +12,12 @@ export default function Home() {
       <Snow />
 
       <h1 className="z-10 text-white text-5xl font-bold text-center drop-shadow-lg px-6">
-        Merry Christmas 🎄
+        <span style={{ color: 'gold' }}>✞</span> Merry Christmas <span style={{ color: 'gold' }}>✞</span>
         <br />
         <span className="text-xl font-normal block mt-6 leading-relaxed">
-          In a silent night where starlight lay,<br />
-          A virgin’s hope brought dawn to clay.<br />
-          The Word took flesh in humble breath,<br />
-          A cradle crowned the fall of death.<br />
-          No throne but straw, no crown but peace,<br />
-          Yet heaven bent so wars might cease.
+          The true celebration of Christmas is when we ponder afresh the grace of God who became human, entered history through a virgin&rsquo;s womb, and brought redemption to the world.<br />
+          <br />
+          <i>- Dr. David Jeremiah</i><br />
         </span>
       </h1>
     </main>
